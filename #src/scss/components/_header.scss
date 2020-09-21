@@ -1,0 +1,40 @@
+header{
+    border-bottom: 1px solid $border-color;
+    background-color: #fff;
+}
+header, .menu, .menu__item, .menu__wrapper{
+    height: 100%;
+}
+.menu__item, .menu__item.city a, .menu__wrapper{
+    display: flex;
+    align-items: center;
+}
+.menu__item{
+    font-size: 1vw;
+    position: relative;
+    a{
+        padding: 1.4vh 3vh;
+    }
+    ::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 1px;
+        background-color: $border-color;
+    }
+    
+    :hover {
+        color: $main-color;
+    }
+}
+.menu__item.city a{
+    font-weight: 600;
+}
+.menu__pin{
+    width: 1.7vw;
+    height: 1.7vw;
+    float: left;
+    margin-right: 0.3vw;
+}

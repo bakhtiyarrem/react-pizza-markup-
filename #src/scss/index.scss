@@ -1,0 +1,28 @@
+@import 'common/variables';
+@import 'common/normalize';
+@import 'common/fonts';
+
+@import 'components/all';
+
+#root{
+    min-height: 100vh;
+    display: grid;
+    grid-template: minmax(40px, auto) 1fr / 14% 86%; 
+    grid-template-areas: "aside header"
+                          "aside main";
+}
+header, aside{
+    position: sticky;
+    top: 0;
+}
+aside{
+    grid-area: aside;
+
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    height: 150vh;
+}
