@@ -1,13 +1,16 @@
 header{
     border-bottom: 1px solid $border-color;
     background-color: #fff;
-}
-header, .menu, .menu__item, .menu__wrapper{
     height: 100%;
 }
-.menu__item, .menu__item.city a, .menu__wrapper{
+.menu, .menu__item, .menu__item.city a, .menu__wrapper, 
+.basket-wrapper{
     display: flex;
     align-items: center;
+    height: 100%;
+}
+.menu{
+    justify-content: space-between;
 }
 .menu__item{
     font-size: 1vw;
@@ -37,4 +40,29 @@ header, .menu, .menu__item, .menu__wrapper{
     height: 1.7vw;
     float: left;
     margin-right: 0.3vw;
+}
+.basket-wrapper{
+    margin-right: 2vw;
+    a{
+        height: 80%;
+        width: 9vw;
+    }
+}
+.basket{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+    border-radius: 12px;
+    background-color: $main-color;
+    font-size: 0.9vw;
+    position: relative;
+    text-align: center;
+}
+.basket__title{
+    flex: 2;
+}
+.basket__count{
+    flex: 1;
+    border-left: 1px solid #fff;
 }

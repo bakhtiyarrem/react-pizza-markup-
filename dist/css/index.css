@@ -123,24 +123,27 @@ aside {
 header {
   border-bottom: 1px solid #D3D3D3;
   background-color: #fff;
-}
-
-header,
-.menu,
-.menu__item,
-.menu__wrapper {
   height: 100%;
 }
 
+.menu,
 .menu__item,
 .menu__item.city a,
-.menu__wrapper {
+.menu__wrapper,
+.basket-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+}
+
+.menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__item {
@@ -175,6 +178,44 @@ header,
   height: 1.7vw;
   float: left;
   margin-right: 0.3vw;
+}
+
+.basket-wrapper {
+  margin-right: 2vw;
+}
+
+.basket-wrapper a {
+  height: 80%;
+  width: 9vw;
+}
+
+.basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 100%;
+  border-radius: 12px;
+  background-color: #f11c11;
+  font-size: 0.9vw;
+  position: relative;
+  text-align: center;
+}
+
+.basket__title {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.basket__count {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-left: 1px solid #fff;
 }
 
 #root {
