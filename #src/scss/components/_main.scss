@@ -1,0 +1,61 @@
+
+.carousel{
+    padding: 0.2vw 0.7vw;
+    background-color: rgb(243, 243, 243);
+    img{
+        width: 100%;
+    }
+}
+.products{
+    padding: 1vw;
+    margin-top: 0.5vw;
+}
+.products__title{
+    font-size: 1.5vw;
+    position: relative;
+    p{
+        margin-left: 0.7vw;
+    }
+    ::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left:  0;
+        height: 100%;
+        width: 3px;
+        background-color: $main-color;
+    }
+}
+.products__container{
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr); 
+    grid-auto-rows: 500px;
+}
+.card{
+    border: 1px solid $border-color;
+    min-width: calc(25% - 1vw);
+    padding: 1.2vw;
+    &:hover{
+        transition-delay: 0.05s;
+        -webkit-box-shadow: 0px 6px 10px 0px rgba(179,179,179,0.66);
+        -moz-box-shadow: 0px 6px 10px 0px rgba(179,179,179,0.66);
+        box-shadow: 0px 6px 10px 0px rgba(179,179,179,0.66);
+    }
+}
+.card__img{
+    text-align: center;
+    img{
+        width: 70%;
+    }
+}
+.card__title{
+    font-weight: 600;
+    font-size: 1vw;
+    margin-top: 0.4vw;
+}
+.card__ingredient{
+    margin-top: 0.3vw;
+    font-size: 0.8vw;
+    color: $silver-text;
+}
