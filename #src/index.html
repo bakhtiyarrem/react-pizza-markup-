@@ -1,164 +1,71 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
-    <link rel="stylesheet" href="css/index.min.css">
-</head>
-<body>
-    <div id="root">
-        <aside>
-            <div class="aside__top">
-                <div class="aside__logo"><img src="img/logo.jpg" alt="logo"></div>
-                <div class="aside__number"><a href="">8(776)7261549</a></div>
-                <div class="aside__working-hours">Время работы: круглосуточно</div>
-            </div>
-            <nav class="catalog ">
-                <ul>
-                    <li class="catalog__item">
-                        <a href="#">
-                            <img src="img/icons/pizza.svg" alt="icon">
-                            <span>Пицца</span>   
-                        </a>
-                    </li>
-                    <li class="catalog__item active">
-                        <a href="#">
-                            <img src="img/icons/pizza.svg" alt="icon" >
-                            <span>Пицца</span>   
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#">
-                            <img src="img/icons/pizza.svg" alt="icon">
-                            <span>Пицца</span>   
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#">
-                            <img src="img/icons/pizza.svg" alt="icon">
-                            <span>Пицца</span>   
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#">
-                            <img src="img/icons/pizza.svg" alt="icon">
-                            <span>Пицца</span>   
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="#">
-                            <img src="img/icons/pizza.svg" alt="icon">
-                            <span>Пицца</span>   
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+@@include('components/header.html')
+@@include('components/aside.html')
     
-        
-        <header>
-            <nav class="menu">
-                <ul class="menu__wrapper">
-                    <li class="menu__item city">
-                        <a href="#">
-                            <div>
-                                <img class="menu__pin" src="img/icons/pin.svg" alt="icon">
-                            </div>
-                            <div>
-                                <span>Павлодар</span>
-                            </div>
-                        </a>
-                    </li >
-                    <li class="menu__item">
-                        <a href="#">Акции</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#">Доставка</a>
-                    </li>
-                </ul>
+        <div class="carousel">
+            <a href="#">
+                <img src="img/banner.jpg" alt="banner">
+            </a>
+        </div>
 
-                <div class="basket-wrapper">
-                    <a href="#">
-                        <div class="basket">
-                            <div class="basket__title">Корзина</div>
-                            <div class="basket__count">0</div>
-                            
-                        </div>
-                    </a>
+        <div class="products">
+            <div class="products__title"><p>Доставка еды в Павлодаре</p> </div>
+            <div class="products__container">
+                <div class="card">
+                    <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
+                    <div class="card__title">Аррива</div>
+                    <div class="card__ingredient">Соус бургер, цыпленок, соус ранч, чоризо из цыпленка, сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
+                    <ul class="card__selector">
+                        <li class="active">30 см.</li>
+                        <li>25 см.</li>
+                    </ul>
+                    <div class="card__bottom-wrapper">
+                        <div class="card__price">1 990 тг</div>
+                        <button class="card__buy">Купить</button>
+                    </div>
                 </div>
-            </nav> 
-        </header>
-            
-     <main>
-            <div class="carousel">
-                <a href="#">
-                    <img src="img/banner.jpg" alt="banner">
-                </a>
-            </div>
-    
-            <div class="products">
-                <div class="products__title"><p>Доставка еды в Павлодаре</p> </div>
-                <div class="products__container">
-                    <div class="card">
-                        <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
-                        <div class="card__title">Аррива</div>
-                        <div class="card__ingredient">Соус бургер, цыпленок, соус ранч, чоризо из цыпленка, сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
-                        <ul class="card__selector">
-                            <li class="active">30 см.</li>
-                            <li>25 см.</li>
-                        </ul>
-                        <div class="card__bottom-wrapper">
-                            <div class="card__price">1 990 тг</div>
-                            <button class="card__buy">Купить</button>
+                <div class="card">
+                    <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
+                    <div class="card__title">Аррива</div>
+                    <div class="card__ingredient"> сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
+                    <ul class="card__selector">
+                        <li class="active">30 см.</li>
+                        <li>25 см.</li>
+                    </ul>
+                    <div class="card__bottom-wrapper">
+                        <div class="card__price">1 990 тг</div>
+                        <div class="card__qty-wrapper">
+                            <div class="card__change-btn">+</div>
+                            <div class="card__qty">1</div>
+                            <div class="card__change-btn">-</div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
-                        <div class="card__title">Аррива</div>
-                        <div class="card__ingredient"> сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
-                        <ul class="card__selector">
-                            <li class="active">30 см.</li>
-                            <li>25 см.</li>
-                        </ul>
-                        <div class="card__bottom-wrapper">
-                            <div class="card__price">1 990 тг</div>
-                            <div class="card__qty-wrapper">
-                                <div class="card__change-btn">+</div>
-                                <div class="card__qty">1</div>
-                                <div class="card__change-btn">-</div>
-                            </div>
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
+                    <div class="card__title">Аррива</div>
+                    <div class="card__ingredient">Соус бургер, цыпленок, соус ранч, чоризо из цыпленка, сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
+                    <ul class="card__selector">
+                        <li class="active">30 см.</li>
+                        <li>25 см.</li>
+                    </ul>
+                    <div class="card__bottom-wrapper">
+                        <div class="card__price">1 990 тг</div>
+                        <button class="card__buy">Купить</button>
                     </div>
-                    <div class="card">
-                        <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
-                        <div class="card__title">Аррива</div>
-                        <div class="card__ingredient">Соус бургер, цыпленок, соус ранч, чоризо из цыпленка, сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
-                        <ul class="card__selector">
-                            <li class="active">30 см.</li>
-                            <li>25 см.</li>
-                        </ul>
-                        <div class="card__bottom-wrapper">
-                            <div class="card__price">1 990 тг</div>
-                            <button class="card__buy">Купить</button>
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
+                    <div class="card__title">Аррива</div>
+                    <div class="card__ingredient">Соус бургер, цыпленок, соус ранч, чоризо из цыпленка, сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
+                    <ul class="card__selector">
+                        <li class="active">30 см.</li>
+                        <li>25 см.</li>
+                    </ul>
+                    <div class="card__bottom-wrapper">
+                        <div class="card__price">1 990 тг</div>
+                        <button class="card__buy">Купить</button>
                     </div>
-                    <div class="card">
-                        <div class="card__img"><img src="img/arriva.jpeg" alt="pizza"></p></div>
-                        <div class="card__title">Аррива</div>
-                        <div class="card__ingredient">Соус бургер, цыпленок, соус ранч, чоризо из цыпленка, сладкий перец, красный лук, моцарелла, томаты, чеснок</div>
-                        <ul class="card__selector">
-                            <li class="active">30 см.</li>
-                            <li>25 см.</li>
-                        </ul>
-                        <div class="card__bottom-wrapper">
-                            <div class="card__price">1 990 тг</div>
-                            <button class="card__buy">Купить</button>
-                        </div>
-                    </div>
-
-            </div>
-    </div>
-   
-</body>
-</html>
+                </div>
+        </div>
+        </div>
+@@include('components/footer.html')

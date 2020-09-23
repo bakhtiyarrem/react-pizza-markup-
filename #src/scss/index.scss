@@ -17,12 +17,12 @@ header, aside{
 }
 aside{
     grid-area: aside;
-
+    height: 100vh;
+    
 }
 header{
     grid-area: header;
 }
 main{
     grid-area: main;
-    height: 150vh;
 }

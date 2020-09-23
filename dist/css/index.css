@@ -43,7 +43,6 @@ aside {
   text-align: center;
   -webkit-box-shadow: 6px 0px 4px rgba(221, 221, 221, 0.25);
           box-shadow: 6px 0px 4px rgba(221, 221, 221, 0.25);
-  height: 100vh;
   z-index: 2;
 }
 
@@ -413,6 +412,7 @@ aside {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: aside;
+  height: 100vh;
 }
 
 header {
@@ -425,7 +425,6 @@ main {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: main;
-  height: 150vh;
 }
 @supports (-webkit-appearance:none){
 
