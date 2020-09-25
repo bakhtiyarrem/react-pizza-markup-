@@ -1,0 +1,49 @@
+.order-wrapper, .order, .order-sidebar{
+    min-height: 100%;
+}
+.order-wrapper{
+    display: flex;
+    .card{
+        border: 0;
+        border-bottom: 1px solid $border-color;
+        height: 12vw;
+        &:hover{
+            box-shadow: 0px 0px 0px 0px #000000;
+        }
+    }
+    .card__img{
+        width: 40%;
+        float: left;
+    }
+    .card__text{
+        width: 60%;
+        float: left;
+    }
+    .card__title{
+        font-size: 1.3vw;
+    }
+    .card__ingredient{
+        font-size: 1vw;
+    }
+    .card__price{
+        color: $main-color;
+    }
+}
+.order, .order-sidebar{
+    padding: 1vw 1.5vw;
+}
+.card__top-wrapper{
+    width: 65%;
+}
+.order{
+    flex: 3;
+}
+.order-sidebar{
+    flex: 2;
+    border-left: 2px solid $border-color;
+}
+.order-title{
+    height: 3.1vw;
+    font-size: 1.4vw;
+    border-bottom: 1px solid $border-color;
+}
